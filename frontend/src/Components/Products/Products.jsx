@@ -43,19 +43,20 @@ const Products = () => {
                         <li className='text-lg font-light transition-all duration-500 ease-out transform 
                     scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("laptop")}>Laptops</li>
                         <li className='text-lg font-light transition-all duration-500 ease-out transform 
-                    scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("laptop")}>Headphone</li>
+                    scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("headphone")}>Headphone</li>
                         <li className='text-lg font-light transition-all duration-500 ease-out transform 
-                    scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("laptop")}>Earbud</li>
+                    scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("earbud")}>Earbud</li>
                         <li className='text-lg font-light transition-all duration-500 ease-out transform 
-                    scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("laptop")}>Earphone</li>
+                    scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("earphone")}>Earphone</li>
                         <li className='text-lg font-light transition-all duration-500 ease-out transform 
                     scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("laptop")}>Gaming</li>
                         <li className='text-lg font-light transition-all duration-500 ease-out transform 
                     scale-100 hover:scale-110 cursor-pointer hover:!text-primary' onClick={() => handleFilter("laptop")}>Virtual</li>
                     </ul>
                     <ul className='p-0 m-0'>
-                        <li className='bg-brandWhite w-[35px] h-[35px] p-2 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-600 group'>
-                            <IoSearchOutline className='text-[50px] text-gray-500 group-hover:text-white' />
+                        <li className='bg-brandWhite py-2 px-3 rounded-full flex items-center cursor-pointe gap-2 '>
+                            <IoSearchOutline className='text-[20px] text-gray-500' />
+                            <input type="search" name="" id="" placeholder='Search Products' className='bg-transparent outline-none'/>
                         </li>
                     </ul>
                 </div>
@@ -74,20 +75,20 @@ const Products = () => {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ul className='p-0 m-0 space-y-8'>
-                                <li onClick={() => setFilter(products)} className='flex items-center gap-1 text-lg text-gray-600 transition 
-                                duration-500 transform scale-100 hover:text-primary hover:scale-105'><AiOutlineProduct/>All</li>
-                                <li onClick={() => handleFilter("laptop")} className='flex items-center gap-1 text-lg text-gray-600 transition 
-                                duration-500 transform scale-100 hover:text-primary hover:scale-105'><IoMdLaptop/>Laptops</li>
                                 <li className='flex items-center gap-1 text-lg text-gray-600 transition 
-                                duration-500 transform scale-100 hover:text-primary hover:scale-105'><IoHeadsetOutline/>Headphones</li>
+                                duration-500 transform scale-100 hover:text-primary hover:scale-105' onClick={() => setFilter(products)}><AiOutlineProduct/>All</li>
                                 <li className='flex items-center gap-1 text-lg text-gray-600 transition 
-                                duration-500 transform scale-100 hover:text-primary hover:scale-105'><GiEarbuds/>Earbuds</li>
+                                duration-500 transform scale-100 hover:text-primary hover:scale-105' onClick={() => handleFilter("laptop")}><IoMdLaptop/>Laptops</li>
                                 <li className='flex items-center gap-1 text-lg text-gray-600 transition 
-                                duration-500 transform scale-100 hover:text-primary hover:scale-105'><BsEarbuds/>Earphones</li>
+                                duration-500 transform scale-100 hover:text-primary hover:scale-105' onClick={() => handleFilter("headphone")} ><IoHeadsetOutline/>Headphones</li>
                                 <li className='flex items-center gap-1 text-lg text-gray-600 transition 
-                                duration-500 transform scale-100 hover:text-primary hover:scale-105'><IoGameControllerOutline/>Gaming</li>
+                                duration-500 transform scale-100 hover:text-primary hover:scale-105' onClick={() => handleFilter("earbud")} ><GiEarbuds/>Earbuds</li>
                                 <li className='flex items-center gap-1 text-lg text-gray-600 transition 
-                                duration-500 transform scale-100 hover:text-primary hover:scale-105'><PiVirtualRealityLight/>Virtual</li>
+                                duration-500 transform scale-100 hover:text-primary hover:scale-105' onClick={() => handleFilter("earphone")} ><BsEarbuds/>Earphones</li>
+                                <li className='flex items-center gap-1 text-lg text-gray-600 transition 
+                                duration-500 transform scale-100 hover:text-primary hover:scale-105' onClick={() => handleFilter("laptop")} ><IoGameControllerOutline/>Gaming</li>
+                                <li className='flex items-center gap-1 text-lg text-gray-600 transition 
+                                duration-500 transform scale-100 hover:text-primary hover:scale-105' onClick={() => handleFilter("laptop")} ><PiVirtualRealityLight/>Virtual</li>
                             </ul>
                         </Offcanvas.Body>
                     </Offcanvas>
@@ -98,7 +99,7 @@ const Products = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {filter.map((product, index) => (
-                        <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.2 }} key={index} className='cursor-pointer mt-5'>
+                        <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3, delay: index * 0.1 }} key={index} className='cursor-pointer mt-5'>
                             <div className='relative w-full h-[350px] group overflow-hidden'>
                                 <img src={product.image} alt="" className='w-full h-full transition-all duration-1000 ease-in-out transform scale-100 group-hover:scale-110' />
                                 <ul className='p-0 m-0 absolute bottom-3 right-5 space-y-2 transition-all duration-500 ease-in-out transform translate-x-96 group-hover:translate-x-2'>

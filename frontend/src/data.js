@@ -46,11 +46,27 @@ export const products = [
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
+        id:"17",
+        image:"pod2.webp",
+        category:"earbud",
+        title:"White Earpod",
+        price:"999",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
         id:"9",
         image:"lap4.avif",
         category:"laptop",
         title:"Black Toshiba laptop",
         price:"35,850",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
+        id:"19",
+        image:"pod4.avif",
+        category:"earbud",
+        title:"White Earpod",
+        price:"640",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
@@ -62,11 +78,27 @@ export const products = [
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
+        id:"13",
+        image:"ear3.jpg",
+        category:"earphone",
+        title:"Black Earphone",
+        price:"200",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
         id:"2",
         image:"head2.jpg",
         category:"headphone",
         title:"Silver headphone",
         price:"700",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
+        id:"20",
+        image:"pod5.jpeg",
+        category:"earbud",
+        title:"White Earpod",
+        price:"850",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
@@ -78,11 +110,27 @@ export const products = [
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
+        id:"14",
+        image:"ear4.jpg",
+        category:"earphone",
+        title:"Black Earphone",
+        price:"400",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
         id:"5",
         image:"head5.jpg",
         category:"headphone",
         title:"Yellow headphone",
         price:"480",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
+        id:"15",
+        image:"ear5.jpg",
+        category:"earphone",
+        title:"White Earphone",
+        price:"520",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
@@ -102,6 +150,14 @@ export const products = [
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
+        id:"12",
+        image:"ear2.avif",
+        category:"earphone",
+        title:"Black Earphone",
+        price:"250",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
         id:"4",
         image:"head4.jpeg",
         category:"headphone",
@@ -115,6 +171,30 @@ export const products = [
         category:"laptop",
         title:"Black Acer laptop",
         price:"55,500",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
+        id:"11",
+        image:"ear1.avif",
+        category:"earphone",
+        title:"Black Earphone",
+        price:"350",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
+        id:"16",
+        image:"pod1.avif",
+        category:"earbud",
+        title:"White Earpod",
+        price:"800",
+        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
+    },
+    {
+        id:"18",
+        image:"pod3.avif",
+        category:"earbud",
+        title:"White Earpod",
+        price:"1200",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
 

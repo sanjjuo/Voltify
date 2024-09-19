@@ -9,7 +9,7 @@ const Header = () => {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         speed: 4000,
         autoplaySpeed: 3000,
     };
