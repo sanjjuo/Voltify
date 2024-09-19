@@ -1,5 +1,6 @@
 import React from 'react'
 import { news } from '../../data';
+import { motion } from 'framer-motion';
 
 const News = () => {
     return (
@@ -9,7 +10,7 @@ const News = () => {
             <div className="container">
                 <div className='grid gap-2 grid-cols-1 md:grid col-span-3 lg:grid-cols-3'>
                     {news.map((item, index) => (
-                        <div className='mt-5' key={index}>
+                        <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, delay: index * 0.2 }} className='mt-5' key={index}>
                             <div className='w-full h-[320px] group overflow-hidden rounded-3xl cursor-pointer'>
                                 <img src={item.image} alt={item.title} className='w-full h-full transition duration-1000 ease-out transform scale-100 group-hover:scale-110' />
                             </div>
@@ -17,7 +18,7 @@ const News = () => {
                                 <h3 className='text-gray-700 font-normal text-xl lg:text-2xl'>{item.title}</h3>
                                 <p className='text-gray-500 text-justify font-light'>{item.description}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

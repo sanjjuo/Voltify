@@ -2,7 +2,7 @@ export const slider = [
     {
         id:"1",
         image:"/headphone.png",
-        title:"Wireless Headphone",
+        title:"Headphones on sale",
         subTitle:"studio",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more. Stay powered, connected, and entertained with our sleek, tech-savvy devices designed for your modern lifestyle."
     },

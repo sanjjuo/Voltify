@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const Category = () => {
     return (
@@ -7,7 +8,7 @@ const Category = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
 
                     {/* First Card */}
-                    <div className="bg-gradient-to-br from-black/90 to-black/70 rounded-3xl h-[320px] cursor-pointer 
+                    <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="bg-gradient-to-br from-black/90 to-black/70 rounded-3xl h-[320px] cursor-pointer 
                     transition-transform duration-500 ease-out transform scale-100 hover:scale-105 dark:bg-dark-900">
                         <div className="relative w-full h-full">
                             <img
@@ -22,11 +23,10 @@ const Category = () => {
                                 hover:!bg-gray-900 hover:!text-primary">Browse</button>
                             </div>
                         </div>
-
-                    </div>
+                    </motion.div>
 
                     {/* Second Card */}
-                    <div className="bg-gradient-to-br from-brandYellow/90 to-brandYellow/70 rounded-3xl h-[320px] cursor-pointer 
+                    <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="bg-gradient-to-br from-brandYellow/90 to-brandYellow/70 rounded-3xl h-[320px] cursor-pointer 
                     transition-transform duration-500 ease-out transform scale-100 hover:scale-105">
                         <div className="relative w-full h-full">
                             <img
@@ -41,10 +41,10 @@ const Category = () => {
                                 hover:bg-brandYellow hover:text-white">Browse</button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Third Card - Spanning 2 columns */}
-                    <div className="lg:col-span-2 bg-gradient-to-br from-primary/90 to-primary/70 rounded-3xl h-[320px] cursor-pointer 
+                    <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }} className="lg:col-span-2 bg-gradient-to-br from-primary/90 to-primary/70 rounded-3xl h-[320px] cursor-pointer 
                     transition-transform duration-500 ease-out transform scale-100 hover:scale-105">
                         <div className="relative w-full h-full">
                             <img
@@ -59,7 +59,7 @@ const Category = () => {
                                 hover:bg-primary hover:text-white">Browse</button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

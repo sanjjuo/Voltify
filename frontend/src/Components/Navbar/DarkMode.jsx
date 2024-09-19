@@ -32,7 +32,7 @@ const DarkMode = () => {
       {dark ? (
         <FiSun className='bg-brandYellow w-6 h-6 lg:w-7 lg:h-7 p-1 rounded-3xl text-2xl text-gray-200' />
       ) : (
-        <HiOutlineMoon className='bg-gray-700 w-6 h-6 lg:w-7 lg:h-7 p-1 rounded-3xl text-xl text-white' />
+        <HiOutlineMoon className='!bg-primary w-6 h-6 lg:w-7 lg:h-7 p-1 rounded-3xl text-xl text-white' />
       )}
     </div>
   );

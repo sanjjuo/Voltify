@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 const Category2 = () => {
     return (
@@ -7,7 +8,7 @@ const Category2 = () => {
                 <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3'>
 
                     {/* first-card */}
-                    <div className='lg:col-span-2 bg-gradient-to-br from-brandWhite/90 to-brandWhite/70 rounded-3xl h-[320px] cursor-pointer 
+                    <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className='lg:col-span-2 bg-gradient-to-br from-brandWhite/90 to-brandWhite/70 rounded-3xl h-[320px] cursor-pointer 
                     transition-transform duration-500 ease-out transform scale-100 hover:scale-105'>
                         <div className='relative w-full h-full'>
                             <img src="/ps5.png" alt="" className='w-[100%] h-[100%] object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.8)]' />
@@ -18,10 +19,10 @@ const Category2 = () => {
                                  hover:!bg-gray-700 hover:text-white'>Browse</button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* second card */}
-                    <div className='bg-gradient-to-br from-brandGreen/90 to-brandGreen/70 rounded-3xl h-[320px]  cursor-pointer 
+                    <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className='bg-gradient-to-br from-brandGreen/90 to-brandGreen/70 rounded-3xl h-[320px]  cursor-pointer 
                     transition-transform duration-500 ease-out transform scale-100 hover:scale-105'>
                         <div className='relative w-full h-full'>
                             <img src="/virtual.png" alt="" className='w-[100%] h-[100%] object-cover rounded-3xl drop-shadow-[-8px_4px_6px_rgba(0,0,0,.8)]' />
@@ -32,10 +33,10 @@ const Category2 = () => {
                                  hover:!bg-brandGreen hover:text-white'>Browse</button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* third-card */}
-                    <div className='bg-gradient-to-br from-brandBlue/90 to-brandBlue/70 rounded-3xl h-[320px] cursor-pointer 
+                    <motion.div initial={{ opacity: 0, y: 150 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.9 }} className='bg-gradient-to-br from-brandBlue/90 to-brandBlue/70 rounded-3xl h-[320px] cursor-pointer 
                     transition-transform duration-500 ease-out transform scale-100 hover:scale-105'>
                         <div className='relative w-full h-full'>
                             <img
@@ -50,7 +51,7 @@ const Category2 = () => {
                                  hover:!bg-brandBlue hover:text-white'>Browse</button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

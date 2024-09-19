@@ -11,6 +11,10 @@
 .app{
   overflow: hidden;
 }
+.btn-close:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
 @layer components {
   .searchbar {

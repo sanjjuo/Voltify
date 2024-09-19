@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Banner2 = () => {
     return (
@@ -12,10 +13,10 @@ const Banner2 = () => {
                             <h1 className='text-white font-extrabold text-[70px]'>Fine smile</h1>
                             <p className='text-white font-thin text-md'>19 jun to 25 july</p>
                         </div>
-                        <div className='w-[100%] h-[280px]'>
+                        <motion.div initial={{ opacity: 0, scale: 0 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9 }} className='w-[100%] h-[280px]'>
                             <img src="virtual.png" alt="" className='w-[100%] h-[100%] object-contain drop-shadow-[-8px_4px_6px_rgba(0,0,0,.8)]
                              transition-all duration-500 ease-in-out transform scale-100 group-hover:scale-110' />
-                        </div>
+                        </motion.div>
                         <div className='w-full'>
                             <h6 className='text-white font-medium text-xl'>Air solo beans</h6>
                             <h1 className='text-white font-extrabold text-[70px]'>Winter sale</h1>
