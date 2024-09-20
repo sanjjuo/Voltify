@@ -1,7 +1,7 @@
 export const slider = [
     {
         id:"1",
-        image:"/headphone.png",
+        image:"/headset.png",
         title:"Headphones on sale",
         subTitle:"studio",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more. Stay powered, connected, and entertained with our sleek, tech-savvy devices designed for your modern lifestyle."
@@ -10,13 +10,6 @@ export const slider = [
         id:"3",
         image:"/laptop.png",
         title:"Branded Laptops",
-        subTitle:"Enjoy",
-        description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more. Stay powered, connected, and entertained with our sleek, tech-savvy devices designed for your modern lifestyle."
-    },
-    {
-        id:"5",
-        image:"/earphone.png",
-        title:"Quality Earphones",
         subTitle:"Enjoy",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more. Stay powered, connected, and entertained with our sleek, tech-savvy devices designed for your modern lifestyle."
     },
@@ -203,21 +196,21 @@ export const products = [
 export const news = [
     {
         id:1,
-        image:"news1.jpeg",
+        image:"news1.avif",
         data:"Jun 20, 2024",
         title:"How to choose perfect smartwatch ?",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
         id:2,
-        image:"news2.avif",
+        image:"news2.jpg",
         data:"Aug 9, 2024",
         title:"How to choose perfect gadget ?",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."
     },
     {
         id:3,
-        image:"news3.jpeg",
+        image:"news3.avif",
         data:"Sep 28, 2024",
         title:"How to choose perfect VR headset ?",
         description:"Voltify offers the latest gadgets like smartwatches, wireless earbuds, power banks, Bluetooth speakers, and more."

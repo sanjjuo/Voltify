@@ -6,7 +6,7 @@ const Banner2 = () => {
         <>
             <div className='py-8 dark:bg-gray-900'>
                 <div className="container">
-                    <div className='!bg-brandGreen flex flex-col justify-between items-center gap-4 lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-4 rounded-3xl p-4 lg:h-[280px] cursor-pointer group 
+                    <div className='!bg-brandVR flex flex-col justify-between items-center gap-4 lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-4 rounded-3xl p-4 lg:h-[280px] cursor-pointer group 
                     transition-all duration-300 ease-in-out transform scale-100 hover:scale-105'>
                         <div className='w-full'>
                             <h6 className='text-white font-medium text-xl'>35% off</h6>
@@ -21,7 +21,7 @@ const Banner2 = () => {
                             <h6 className='text-white font-medium text-xl'>Air solo beans</h6>
                             <h1 className='text-white font-extrabold text-[70px]'>Winter sale</h1>
                             <p className='text-white font-thin text-md'>lorum ipsum lorum ipsum lorum ipsum lorum ipsum lorum ipsum</p>
-                            <button className='bg-white !text-brandGreen w-[30%] rounded-3xl p-2 text-xl hover:!bg-gray-900 hover:!text-white'>Shop</button>
+                            <button className='bg-white !text-brandVR w-[30%] rounded-3xl p-2 text-xl hover:!bg-gray-900 hover:!text-white'>Shop</button>
                         </div>
                     </div>
                 </div>

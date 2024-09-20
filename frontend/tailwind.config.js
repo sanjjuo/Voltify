@@ -8,15 +8,13 @@ export default {
   theme: {
     extend: {
       colors:{
-        // main:"#74AFBE",
-        // secondary:"#6d7678",
-        // tertiary:"#D7E8EB",
         primary: "#74AFBE",
         secondary: "#f42c37",
-        brandYellow: "#fdc62e",
+        brandHeadSet:"#D9D7F1",
+        brandSmartWatch: "#E5DDC5",
         brandLightBlue:"#D7E8EB",
-        brandGreen: "#2dcc6f",
-        brandBlue: "#1376f4",
+        brandVR: "#95D2B3",
+        brandSpeaker: "#CAF4FF",
         brandWhite: "#eeeeee",
       },
       // container:{
